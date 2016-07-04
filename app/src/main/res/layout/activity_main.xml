@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sheajohnh.abnd.quizapp.MainActivity">
+    tools:context="com.sheajohnh.abnd.quizapp.MainActivity" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,6 +16,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="Game Of Thrones Quiz Challenge" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/got_logo"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,7 +62,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Question 1" />
+                android:text="Question 1"
+                style="@style/QuestionHeader" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -71,19 +79,22 @@
                     android:id="@+id/question_1_radiobutton_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="House Stark" />
+                    android:text="House Stark"
+                    style="@style/QuestionResponse" />
 
                 <RadioButton
                     android:id="@+id/question_1_radiobutton_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="House Lannister" />
+                    android:text="House Lannister"
+                    style="@style/QuestionResponse" />
 
                 <RadioButton
-                android:id="@+id/question_1_radiobutton_3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="House Frey" />
+                    android:id="@+id/question_1_radiobutton_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="House Frey"
+                    style="@style/QuestionResponse" />
             </RadioGroup>
         </LinearLayout>
 
@@ -95,7 +106,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Question 2" />
+                android:text="Question 2"
+                style="@style/QuestionHeader" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -106,46 +118,29 @@
                 android:id="@+id/question_2_checkbox_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Shaggydog" />
+                android:text="Shaggydog"
+                style="@style/QuestionResponse" />
 
             <CheckBox
                 android:id="@+id/question_2_checkbox_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ghost" />
+                android:text="Ghost"
+                style="@style/QuestionResponse" />
 
             <CheckBox
                 android:id="@+id/question_2_checkbox_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nymeria" />
+                android:text="Nymeria"
+                style="@style/QuestionResponse" />
 
             <CheckBox
                 android:id="@+id/question_2_checkbox_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cujo" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Question 3"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="The girl with no name from House Stark, what is her name?"/>
-
-            <EditText
-                android:id="@+id/question_3_edittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Enter name here"/>
+                android:text="Cujo"
+                style="@style/QuestionResponse" />
         </LinearLayout>
 
         <LinearLayout
@@ -156,7 +151,32 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Question 4" />
+                android:text="Question 3"
+                style="@style/QuestionHeader"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The girl with no name from House Stark, what is her name?"/>
+
+            <EditText
+                android:id="@+id/question_3_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter name here"
+                style="@style/QuestionResponse" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question 4"
+                style="@style/QuestionHeader" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -171,13 +191,15 @@
                     android:id="@+id/question_4_radiobutton_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="North" />
+                    android:text="North"
+                    style="@style/QuestionResponse" />
 
                 <RadioButton
                     android:id="@+id/question_4_radiobutton_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="South" />
+                    android:text="South"
+                    style="@style/QuestionResponse" />
             </RadioGroup>
         </LinearLayout>
 
@@ -189,7 +211,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Question 5" />
+                android:text="Question 5"
+                style="@style/QuestionHeader" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -200,25 +223,29 @@
                 android:id="@+id/question_5_checkbox_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mother of Monkeys" />
+                android:text="Mother of Monkeys"
+                style="@style/QuestionResponse" />
 
             <CheckBox
                 android:id="@+id/question_5_checkbox_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Breaker of Chains" />
+                android:text="Breaker of Chains"
+                style="@style/QuestionResponse" />
 
             <CheckBox
                 android:id="@+id/question_5_checkbox_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mother of Dragons" />
+                android:text="Mother of Dragons"
+                style="@style/QuestionResponse" />
 
             <CheckBox
                 android:id="@+id/question_5_checkbox_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Silver Queen" />
+                android:text="Silver Queen"
+                style="@style/QuestionResponse" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
