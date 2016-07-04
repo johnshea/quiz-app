@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Game Of Thrones Quiz Challenge" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/got_logo"
+                android:scaleType="centerCrop" />
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reset" />
+
+            <Button
+                android:id="@+id/buttonScoreQuiz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Score Quiz" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tyrion was born into..." />
+
+                <RadioGroup
+                    android:id="@+id/question_1_radiogroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/question_1_radiobutton_1"
+                        style="@style/QuestionResponse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="House Stark" />
+
+                    <RadioButton
+                        android:id="@+id/question_1_radiobutton_2"
+                        style="@style/QuestionResponse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="House Lannister" />
+
+                    <RadioButton
+                        android:id="@+id/question_1_radiobutton_3"
+                        style="@style/QuestionResponse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="House Frey" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Which of the following are direwolves names?" />
+
+                <CheckBox
+                    android:id="@+id/question_2_checkbox_1"
+                    style="@style/QuestionResponse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shaggydog" />
+
+                <CheckBox
+                    android:id="@+id/question_2_checkbox_2"
+                    style="@style/QuestionResponse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ghost" />
+
+                <CheckBox
+                    android:id="@+id/question_2_checkbox_3"
+                    style="@style/QuestionResponse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nymeria" />
+
+                <CheckBox
+                    android:id="@+id/question_2_checkbox_4"
+                    style="@style/QuestionResponse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cujo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The girl with no name from House Stark, what is her name?" />
+
+                <EditText
+                    android:id="@+id/question_3_edittext"
+                    style="@style/QuestionResponse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter name here" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Samwell Tarly is from the..." />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/question_4_radiobutton_1"
+                        style="@style/QuestionResponse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="North" />
+
+                    <RadioButton
+                        android:id="@+id/question_4_radiobutton_2"
+                        style="@style/QuestionResponse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="South" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/QuestionHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Question 5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daenerys Stormborn is known as the..." />
+
+                <CheckBox
+                    android:id="@+id/question_5_checkbox_1"
+                    style="@style/QuestionResponse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mother of Monkeys" />
+
+                <CheckBox
+                    android:id="@+id/question_5_checkbox_2"
+                    style="@style/QuestionResponse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Breaker of Chains" />
+
+                <CheckBox
+                    android:id="@+id/question_5_checkbox_3"
+                    style="@style/QuestionResponse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mother of Dragons" />
+
+                <CheckBox
+                    android:id="@+id/question_5_checkbox_4"
+                    style="@style/QuestionResponse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Silver Queen" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
